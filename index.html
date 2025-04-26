@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SuperGoon</title>
+</head>
+<body>
+    <h1 class="title">Super Earth Reliever Center</h1>
+    <img class="gerb"  src="./img/gerb.png" alt="no_gerb?">
+    <div class="goonering">
+        <h1>Clicking this button is mandatory</h1>
+        <button id="trigger" class="action">Click To Goon</button>
+    </div>
+        <div id="goon" class="modal">
+            <img src="./img/leball.gif" alt="no_ball?">
+        </div>
+    
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+   
+    <script>
+        // Get the modal
+        var modal = document.getElementById("goon");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("trigger");
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+</body>
+</html>
